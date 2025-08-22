@@ -61,6 +61,17 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
+				},
+				gold: {
+					50: '#FFFDD0',
+					100: '#F5F5DC',
+					400: '#D4AF37',
+					500: '#B8860B',
+					600: '#DAA520'
+				},
+				brown: {
+					800: '#2C1810',
+					900: '#1A0F08'
 				}
 			},
 			borderRadius: {
@@ -88,7 +99,23 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.6s ease-out',
+				'slide-up': 'slideUp 0.8s ease-out'
+			},
+			keyframes: {
+				'fadeIn': {
+					'0%': { opacity: '0', transform: 'translateY(20px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				},
+				'slideUp': {
+					'0%': { opacity: '0', transform: 'translateY(30px)' },
+					'100%': { opacity: '1', transform: 'translateY(0)' }
+				}
+			},
+			fontFamily: {
+				'cormorant': ['Cormorant', 'serif'],
+				'sans': ['Open Sans', 'sans-serif']
 			}
 		}
 	},
